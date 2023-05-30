@@ -1,0 +1,197 @@
+@import './../mixins.scss';
+
+.main{
+    color: #FFFFFF;
+
+    @include respond-to(small) {
+        padding: 0px 35px;
+        // background: 
+        // url(./../img/line/line-main-1.png)0% 10% no-repeat,
+        // url(./../img/line/line-main-2.png)0% 20% no-repeat,
+        // url(./../img/line/line-card.png)0% 55% no-repeat,
+        // url(./../img/line/line-numbers.png)0% 97% no-repeat;
+        &__introduction{
+            margin-top: 40px;
+            text-align: center;
+            h2{
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 32px;
+            }
+            h3{
+                font-weight: 300;
+                font-size: 26px;
+                line-height: 32px;
+                img{
+                    display: none;
+                }
+            }
+
+            p{
+                display: none;
+            }
+        }
+
+        &__why{
+            margin-top: 60px;
+            margin-bottom: 25px;
+            text-align: center;
+            h2{
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 32px;
+            }
+            h3{
+                font-weight: 300;
+                font-size: 26px;
+                line-height: 32px;
+                img{
+                    display: none;
+                }
+            }
+
+            p{
+                display: none;
+            }
+        }
+
+        &__how{
+            text-align: center;
+            margin-bottom: 30px;
+            h2{
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 32px;
+            }
+            h3{
+                font-weight: 300;
+                font-size: 26px;
+                line-height: 32px;
+                img{
+                    display: none;
+                }
+            }
+
+            p{
+                display: none;
+            }
+        }
+    }
+
+    @include respond-to(medium) {
+
+    }
+
+    @include respond-to(large) {
+        padding: 0px 80px 0px 85px;
+        background: 
+        url(./../img/line/line-main-1.png)0% 10% no-repeat,
+        url(./../img/line/line-main-2.png)0% 20% no-repeat,
+        url(./../img/line/line-card.png)0% 55% no-repeat,
+        url(./../img/line/line-numbers.png)0% 97% no-repeat;
+
+
+
+        &__introduction{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 90px 0px 100px 0px;
+
+            &--subtitle{
+                display: flex;
+                flex-direction: column;
+
+                h2{
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+
+                h3{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 16px;
+                    font-weight: 300;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+            }
+
+            p{
+                max-width: 650px;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 28px;
+            }
+        }
+
+        &__why{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 90px;
+
+            &--subtitle{
+                display: flex;
+                flex-direction: column;
+
+                h2{
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+
+                h3{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 16px;
+                    font-weight: 300;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+            }
+
+            p{
+                max-width: 650px;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 28px;
+            }
+        }
+
+        &__how{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 90px;
+
+            &--subtitle{
+                display: flex;
+                flex-direction: column;
+
+                h2{
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+
+                h3{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 16px;
+                    font-weight: 300;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+            }
+
+            p{
+                max-width: 650px;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 28px;
+            }
+        }
+    }
+}

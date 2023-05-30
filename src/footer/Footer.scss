@@ -1,0 +1,171 @@
+@import './../mixins.scss';
+
+.footer{
+    @include respond-to(small) {
+        padding: 80px 35px 25px 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+        height: 650px;
+        &__section{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 430px;
+
+            .line,
+            .footer__nav,
+            .footer__bar{
+                display: none;
+            }
+
+            .footer__logo{
+                width: 185px;
+                align-self: center;
+                filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
+                cursor: pointer;
+            }
+            .footer__media{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 180px;
+                h2{
+
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                &--block{
+                    display: flex;
+                    gap: 20px;
+                }
+                button{
+                    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+                    border-radius: 40px;
+                    width: 100%;
+                    height: 55px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #343045;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .footer__line{
+            max-width: 290px;
+        }
+
+        &__copyright{
+            text-align: center;
+            color: #FFFFFF;
+
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.13em;
+        }
+    }
+
+    @include respond-to(medium) {
+
+    }
+
+    @include respond-to(large) {
+        padding: 100px 80px 60px 85px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+        height: 500px;
+        background: 
+        url(./../img/line/bc_line_footer-1.png)20px -230px no-repeat,
+        url(./../img/line/bc_line_footer-2.png)20px 50px no-repeat;
+
+        a{
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__section{
+            display: flex;
+            justify-content: space-around;
+            min-height: 195px;
+            width: 1270px;
+
+            .footer__logo{
+                width: 185px;
+                align-self: center;
+                filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
+                cursor: pointer;
+                &:hover{
+                    transform: rotate(-1000deg);
+                    transition: all 1.5s ease-in-out;
+                }
+            }
+
+            .footer__nav,
+            .footer__bar{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+            .footer__media{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h2{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                &--block{
+                    display: flex;
+                    gap: 20px;
+                }
+                button{
+                    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+                    border-radius: 40px;
+                    width: 214px;
+                    height: 48px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #343045;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        border: 2px solid #fff;
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+
+        &__copyright{
+            text-align: center;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.13em;
+        }
+    }
+}

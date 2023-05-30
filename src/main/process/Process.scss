@@ -1,0 +1,58 @@
+@import './../../mixins.scss';
+
+.main__process{
+    @include respond-to(small) {
+        display: none;
+    }
+
+    @include respond-to(medium) {
+
+    }
+
+    @include respond-to(large) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        .cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 50px;
+
+            &__elipse{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 140px;
+                height: 140px;
+                background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
+                filter: drop-shadow(0px 0px 20px #000);
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 20px;
+                border-radius: 50%;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 78px;
+                color: #343045;
+            }
+            p{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+
+
+                position: relative;
+                padding-left: 45px; 
+
+                &::before{
+                    content: url('../../img/icons/arrow-numbers.png');
+                    position: absolute;
+                    top: 30%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+            }   
+        }
+    }
+}

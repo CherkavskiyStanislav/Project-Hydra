@@ -1,0 +1,28 @@
+@import './../mixins.scss';
+
+.header{
+    @include respond-to(small) {
+        padding: 25px 35px 0px 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // background: 
+        // url(./../img/line/line-bc-user1.png)30% 60% no-repeat,
+        // url(./../img/line/line-bc-user2.png)70% 115% no-repeat,
+        // url(./../img/line/line-bc-user3.png)140% 200% no-repeat,
+    }
+    
+    @include respond-to(medium) {
+    
+    }
+    
+    @include respond-to(large) {
+        padding: 50px 80px 0px 85px;
+
+        background: 
+        url(./../img/line/line-bc-user1.png)90% 0% no-repeat,
+        url(./../img/line/line-bc-user2.png)100% 90% no-repeat,
+        url(./../img/line/line-bc-user3.png)100% 60% no-repeat,
+        url(./../img/line/line-header1.png)0% 70%  no-repeat; 
+    }
+}

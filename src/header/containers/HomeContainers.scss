@@ -1,0 +1,209 @@
+@import './../../mixins.scss';
+
+.header__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    @include respond-to(small) {
+        &--right{
+            order: 2;
+            h2{
+                margin-top: 40px;
+                margin-bottom: 36px;
+                font-size: 24px;
+                font-weight: 700;
+                span{
+                    font-size: 32px;
+                    background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+
+            p{
+                display: none;
+            }
+            &--button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 40px;
+                img{
+                    display: none;
+                }
+            }
+            button{
+                padding: 16px 40px;
+                height: 52px;
+                background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+                border-radius: 40px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #343045;
+                position: relative;
+                border: none;
+                cursor: pointer;    
+            }
+        }
+
+        &--left{
+            order: 1;
+            img{
+                width: 320px;
+                height: 280px;
+                border-radius: 100px 100px 100px 240px;
+                box-shadow: rgba(0, 0, 0, 0.148) 0px 0px 0px 15px;
+            }
+        }
+
+
+    }
+
+    @include respond-to(medium) {
+
+    }
+
+    @include respond-to(large) {
+        flex-direction: row;
+
+        &--right{
+            max-width: 501px;
+            max-height: 420px;
+    
+            h2{
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 55px;
+                margin-bottom: 36px;
+                span{
+                    background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+    
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                margin-bottom: 66px;
+            }
+    
+            &--button{
+                display: flex;
+                align-items: center;
+                column-gap: 40px;
+            }
+            button{
+                padding: 16px 40px;
+                height: 48px;
+                background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+                border-radius: 40px;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 15px;
+                color: #343045;
+                position: relative;
+                border: none;
+                cursor: pointer;
+    
+                &:hover{
+                    color: #fff;
+                    border: 2px solid white;
+                }
+
+                &::after{
+                    content: url(./../../img/icons/arrow-header.png);
+                    position: absolute;
+                    top: 50%;
+                    left: 125%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    
+        &--left{
+            img{
+                width: 490px;
+                height: 426px;
+                border-radius: 100px 100px 100px 240px;
+                box-shadow: rgba(0, 0, 0, 0.148) 0px 0px 0px 15px;
+            }
+        }
+    }
+}
+   
+.contact-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 40px;
+    align-items: center;
+    height: 167px;
+    border-radius: 90px;
+    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+    color: #FFFFFF;
+
+        @include respond-to(small) {
+            display: none;
+        }
+
+        @include respond-to(medium) {
+
+        }
+
+        @include respond-to(large) {
+            .contact{
+                position: relative;
+                a{
+                    column-gap: 20px;
+                    max-width: 460px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    position: relative;
+                    background-image: linear-gradient(
+                        to right,
+                        #C0B7E8,
+                        #C0B7E8 50%,
+                        #fff 50%
+                    );
+                    background-size: 200% 100%;
+                    background-position: -100%;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background-position: 0;
+                    }
+                }
+
+                h3{
+                    font-weight: 700;
+                    font-size: 24px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+            .address,
+            .phone{
+                &::after{
+                    position: absolute;
+                    content: url('../../img/line/vertical-line.png');
+                    top: 50%;
+                    right: -20%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+}

@@ -1,0 +1,143 @@
+@import './../../mixins.scss';
+
+.main__technologies{
+    text-align: center;
+    position: relative;
+
+    @include respond-to(small) {
+        margin-top: 55px;
+        margin-bottom: 20px;
+        .background{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 170px;
+            border-radius: 90px;
+            background-image: linear-gradient(180deg, rgb(65, 57, 81), rgba(0, 0, 0, 0.4)), url(../../img/main/technoGirl.webp);
+            background-position: 40% 30%;
+            background-size: 1740px 1160px;
+            transition: height 0.5s ease-in-out;
+
+            &.expanded {
+                height: 250px;
+            }
+    
+            h2{
+                color: #FFFFFF;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+        
+                span{
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+        }
+
+        .technobtn{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 10px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+    
+            &__img{
+                width: 38px;
+                transition: rotate 0.5s ease-in;
+                rotate: 0deg;
+                &.expanded{
+                    rotate: -180deg;
+                }
+            }
+        }
+
+        .brands{
+            display: none;
+        }
+    }
+
+    @include respond-to(medium) {
+
+    }
+
+    @include respond-to(large) {
+        margin-top: 100px;
+        .background{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            flex-direction: column;
+            text-align: center;
+            gap: 11px;
+            height: 300px;
+            border-radius: 160px;
+            background-image: linear-gradient(180deg, rgb(65, 57, 81), rgba(0, 0, 0, 0.4)), url(../../img/main/technoGirl.webp);
+            background-position: 40% 30%;
+            background-size: 1740px 1160px;
+            transition: height 0.5s ease-in-out;
+    
+            &.expanded {
+                height: 450px;
+            }
+    
+            h2{
+                color: #FFFFFF;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 44px;
+        
+                span{
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+            }
+        }
+    
+        .technobtn{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 15px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+    
+            &.expanded{
+                background: linear-gradient(90deg, #9e8ded 0%, #8176AF 100%);
+            }
+    
+            &__img{
+                transition: rotate 0.5s ease-in;
+                rotate: 0deg;
+                &.expanded{
+                    rotate: -180deg;
+                }
+            }
+        }
+    
+        .brands{
+            margin-top: 100px;
+            height: 270px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
