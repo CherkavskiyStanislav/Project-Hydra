@@ -13,7 +13,7 @@
         }
 
         &.good {
-            border: 2px solid aqua;
+            border: 2px solid green;
             color: green;
         }
         input {
@@ -50,8 +50,8 @@
         height: 55px;
         .divError {
             top: 120%;
-            left: 40%;
-            transform: translate(-25%, -50%);
+            left: 10%;
+            transform: translate(0%, -50%);
         }
     }
 

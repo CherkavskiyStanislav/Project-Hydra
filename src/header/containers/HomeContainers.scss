@@ -6,11 +6,11 @@
     align-items: center;
     justify-content: space-between;
     color: #fff;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin: 60px 0 53px;
     @include respond-to(small) {
         &--right{
             order: 2;
+            text-align: center;
             h2{
                 margin-top: 40px;
                 margin-bottom: 36px;
@@ -138,72 +138,4 @@
             }
         }
     }
-}
-   
-.contact-section{
-    display: flex;
-    justify-content: space-around;
-    padding: 0px 40px;
-    align-items: center;
-    height: 167px;
-    border-radius: 90px;
-    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
-    color: #FFFFFF;
-
-        @include respond-to(small) {
-            display: none;
-        }
-
-        @include respond-to(medium) {
-
-        }
-
-        @include respond-to(large) {
-            .contact{
-                position: relative;
-                a{
-                    column-gap: 20px;
-                    max-width: 460px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-decoration: none;
-                    position: relative;
-                    background-image: linear-gradient(
-                        to right,
-                        #C0B7E8,
-                        #C0B7E8 50%,
-                        #fff 50%
-                    );
-                    background-size: 200% 100%;
-                    background-position: -100%;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    transition: all 0.3s ease-in-out;
-                    &:hover {
-                        background-position: 0;
-                    }
-                }
-
-                h3{
-                    font-weight: 700;
-                    font-size: 24px;
-                }
-                p{
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 17px;
-                }
-            }
-            .address,
-            .phone{
-                &::after{
-                    position: absolute;
-                    content: url('../../img/line/vertical-line.png');
-                    top: 50%;
-                    right: -20%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-        }
 }

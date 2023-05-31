@@ -2,7 +2,7 @@ import React from "react";
 import './Process.scss';
 import { v4 as uuidv4 } from "uuid";
 import { useTranslation } from 'react-i18next';
-import Slide from '../../slide/Slide';
+import Slide from './../slide/Slide';
 
 
 function Process() {
@@ -27,13 +27,14 @@ function Process() {
     ));
 
   return (
-    <>
-    <div className="main__process" id="how">
-        {elipseCard}
+    <div id="how">
+        <Slide content={elipseCard.slice(0, 4)}/>
     </div>
-    <Slide content={elipseCard.slice(0, 4)}/>
-    </>
   );
 }
 
 export default Process;
+
+    {/* <div className="main__process" >
+        {elipseCard}
+    </div> */}

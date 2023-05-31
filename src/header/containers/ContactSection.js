@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
-import Slide from '../../slide/Slide'; 
+import Slide from './HeaderSlide'; 
 
 import phone from "../../img/icons/headerTell.png";
 import location from "../../img/icons/headerLoc.png";
@@ -10,7 +10,7 @@ import mail from "../../img/icons/headerMail.png";
 export const ContactSection = () => {
   const { t } = useTranslation();
 
-  const content = [
+  const contact = [
     <div className="contact  address" key="address">
       <a href="https://goo.gl/maps/tgzaBprwZNoc6DsXA" className="location" target="blank">
         <img src={location} alt="location" />
@@ -41,12 +41,6 @@ export const ContactSection = () => {
   ];
 
   return (
-    <>
-    <div className="contact-section">
-      {content}
-    </div>
-    <Slide content={content}/>
-    </>
-
+    <Slide contact={contact}/>
   )
 }

@@ -2,7 +2,7 @@ import React from "react";
 import './Build.scss';
 import { useTranslation } from 'react-i18next';
 import { v4 as uuidv4 } from "uuid";
-import Slide from '../../slide/Slide';
+import Slide from './../slide/Slide';
 
 import firstList from '../../img/main/user-card-1.webp';
 import secondList from '../../img/main/user-card-2.webp';
@@ -33,13 +33,14 @@ function Build() {
   ));
 
   return (
-    <>
-    <div className="main__list" id="serv">
-      {serviceCard}
+    <div id="serv">
+    <Slide  content={serviceCard.slice(0, 4)}/>
     </div>
-    <Slide content={serviceCard.slice(0, 4)}/>
-    </>
   );
 }
 
 export default Build;
+
+{/* <div className="main__list" id="serv">
+{serviceCard}
+</div> */}

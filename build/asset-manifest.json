@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/project-Hydra/static/css/main.31e65959.css",
+    "main.js": "/project-Hydra/static/js/main.7970aa79.js",
+    "static/media/mainMan.webp": "/project-Hydra/static/media/mainMan.8dd17521fd342a1e9253.webp",
+    "static/media/headerGirl.webp": "/project-Hydra/static/media/headerGirl.63759dae0a16d42d404b.webp",
+    "static/media/technoGirl.webp": "/project-Hydra/static/media/technoGirl.b629536de7e2ef56918d.webp",
+    "static/media/line-card.png": "/project-Hydra/static/media/line-card.07e7a48deb200c742507.png",
+    "static/media/user-card-1.webp": "/project-Hydra/static/media/user-card-1.18aef663cb86724e43a7.webp",
+    "static/media/user-card-4.webp": "/project-Hydra/static/media/user-card-4.680085aedd2bbe1f865a.webp",
+    "static/media/user-card-3.webp": "/project-Hydra/static/media/user-card-3.5255efb39e3f36fc8a99.webp",
+    "static/media/user-card-2.webp": "/project-Hydra/static/media/user-card-2.fb9706f1d1f9e0d68dd7.webp",
+    "static/media/line-main-1.png": "/project-Hydra/static/media/line-main-1.19522e6ad2eb36ce75a7.png",
+    "static/media/bc_line_footer-2.png": "/project-Hydra/static/media/bc_line_footer-2.e1d43a21441bdd537444.png",
+    "static/media/bc_line_footer-1.png": "/project-Hydra/static/media/bc_line_footer-1.ecbf902a58b5ace33b95.png",
+    "static/media/line-numbers.png": "/project-Hydra/static/media/line-numbers.9ad3f0e157cb856926a1.png",
+    "static/media/line-main-2.png": "/project-Hydra/static/media/line-main-2.fd6a03a8c501df6aea28.png",
+    "static/media/line-bc-user1.png": "/project-Hydra/static/media/line-bc-user1.1785256da03122f82e1e.png",
+    "static/media/line-bc-user3.png": "/project-Hydra/static/media/line-bc-user3.d0ffeca54359ed15d21b.png",
+    "static/media/line-bc-user2.png": "/project-Hydra/static/media/line-bc-user2.e636d734f9158cb92693.png",
+    "static/media/footerLogo.png": "/project-Hydra/static/media/footerLogo.84ae21ad12bf879dd046.png",
+    "static/media/line-header1.png": "/project-Hydra/static/media/line-header1.853b0be7dce633d825bd.png",
+    "static/media/instagram.svg": "/project-Hydra/static/media/instagram.16f48de463efdf77a8567de307f1055d.svg",
+    "static/media/pinterest.svg": "/project-Hydra/static/media/pinterest.95f508c39aaf74ea0fcb27dddec52011.svg",
+    "static/media/twitter.svg": "/project-Hydra/static/media/twitter.60e44b79072d468fed4466b2cf5f5e63.svg",
+    "static/media/youtube.svg": "/project-Hydra/static/media/youtube.98208b6e54d0f9257375fbb41e7853f7.svg",
+    "static/media/linkedin.svg": "/project-Hydra/static/media/linkedin.ed4bec28a8eb415f4e3beb52763bf156.svg",
+    "static/media/facebook.svg": "/project-Hydra/static/media/facebook.6b5e1d7ac284ebce0a62e053e4fe7c37.svg",
+    "index.html": "/project-Hydra/index.html",
+    "main.31e65959.css.map": "/project-Hydra/static/css/main.31e65959.css.map",
+    "main.7970aa79.js.map": "/project-Hydra/static/js/main.7970aa79.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31e65959.css",
+    "static/js/main.7970aa79.js"
+  ]
+}

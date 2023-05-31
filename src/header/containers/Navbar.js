@@ -1,8 +1,7 @@
 import React, { useState, useRef } from "react";
 import './Navbar.scss'
+import MobileNav from "./MobileNav";
 import { useTranslation } from 'react-i18next';
-import { v4 as uuidv4 } from "uuid";
-import { FaBars, FaTimes } from 'react-icons/fa';
 import { HashLink } from 'react-router-hash-link';
 
 import frame from '../../img/logo/barLogo.png';
@@ -10,11 +9,6 @@ import logo from '../../img/logo/barLogoName.png';
 
 function Navbar (){
   const { t, i18n } = useTranslation();
-
-  const navRef = useRef();
-  const showNavbar = () => {
-    navRef.current.classList.toggle('responsive_nav')
-  }
 
   const [activeButton, setActiveButton] = useState('');
 
@@ -24,13 +18,15 @@ function Navbar (){
   };
 
   return (
-    <>
-    <nav className="navbar">
+    <nav className="header__navbar">
       <div className="navbar__logo">
         <img className="navbar__logo--first" src={frame} alt="logo"/>
         <img className="navbar__logo--second" src={logo} alt="HYDRA"/>
       </div>
-      <ul className="navbar__menu" ref={navRef}>
+
+      <MobileNav />
+      
+      <ul className="navbar__menu">
         <li className="navbar__menu--links">
           <HashLink smooth to="#about">{t('navbar-menu-about')}</HashLink>
         </li>
@@ -43,17 +39,20 @@ function Navbar (){
         <li className="navbar__menu--links">
           <HashLink smooth to="#how">{t('navbar-menu-how')}</HashLink>
         </li>
-        <button onClick={showNavbar} className="navbar-btn navbar-close-btn">
-          <FaTimes />
-        </button>
+        <div className="navbar__buttons">
+          <button className="navbar__buttons--contact">
+            <HashLink smooth to="#contact">
+              {t('navbar-buttons-contact')}
+            </HashLink>
+          </button>
+          <button className="navbar__buttons--join">
+            <HashLink smooth to="#join">
+              {t('navbar-buttons-join')}
+            </HashLink>
+          </button>
+        </div>
       </ul>
-      <button onClick={showNavbar} className="navbar-btn">
-        <FaBars />
-      </button>
-      <div className="navbar__buttons">
-        <button className="navbar__buttons--contact">{t('navbar-buttons-contact')}</button>
-        <button className="navbar__buttons--join">{t('navbar-buttons-join')}</button>
-      </div>
+
       <div className="navbar__language">
           <button
             className={`navbar-language--button ${activeButton === 'en' ? 'active' : ''}`}
@@ -69,8 +68,6 @@ function Navbar (){
           </button>
         </div>
     </nav>
-
-    </>
   )
 }
 export default Navbar

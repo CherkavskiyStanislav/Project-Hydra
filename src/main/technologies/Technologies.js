@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Technologies.scss';
 import { v4 as uuidv4 } from "uuid";
 import { useTranslation } from 'react-i18next';
-import Slide from '../../slide/Slide';
+import Slide from './../slide/Slide';
 
 import firstTech from '../../img/brands/brand-1.png'
 import secondTech from '../../img/brands/brand-2.png'
@@ -46,8 +46,6 @@ const Technologies = () => {
       <button onClick={handleClick} className={`technobtn ${expanded ? 'expanded' : ''}`}>
         <img src={techArrow} alt='hardwares' className={`technobtn__img ${expanded ? 'expanded' : ''}`}/> 
       </button>
-
-      <div className='brands'>{technoImg}</div>
     </div>
     <Slide content={technoImg.slice(0, 4)}/>
     </>

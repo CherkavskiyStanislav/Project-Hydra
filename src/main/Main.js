@@ -36,16 +36,15 @@ const Main = () => {
   ];
 
   return (
-    <div className="main">
+    <main className="main">
           <PostItem post={posts[0]} />
           <About />
           <PostItem post={posts[1]} />
           <Build />
-          <PostItem post={posts[2]} />
           <Technologies />
+          <PostItem post={posts[2]} />
           <Process  />
-
-    </div>
+    </main>
   );
 }
 

@@ -29,15 +29,15 @@ function Footer() {
         { id: uuidv4(), title: t('footer_bar_link4'), url: '/', cName: 'footer__bar--link'},
     ];t()
     const SocialMedias = [
-        { id: uuidv4(), src: facebook, alt: 'facebook', cName: 'footer__media-img'},
-        { id: uuidv4(), src: twitter, alt: 'twitter', cName: 'footer__media-img'},
-        { id: uuidv4(), src: linkedin ,alt: 'linkedin', cName: 'footer__media-img'},
-        { id: uuidv4(), src: youtube, alt: 'youtube', cName: 'footer__media-img'},
-        { id: uuidv4(), src: instagram, alt: 'instagram', cName: 'footer__media-img'},
-        { id: uuidv4(), src: pinterest , alt: 'pinterest', cName: 'footer__media-img'},
+        { id: uuidv4(), src: facebook, alt: 'facebook', cName: 'footer__media-img', href: 'https://www.facebook.com/cherkavskiy.stas/', target:"_blank"},
+        { id: uuidv4(), src: twitter, alt: 'twitter', cName: 'footer__media-img', href: 'https://twitter.com/intent/tweet?text=Hello%20world', target:"_blank"},
+        { id: uuidv4(), src: linkedin ,alt: 'linkedin', cName: 'footer__media-img', href: 'https://www.linkedin.com/in/stanislav-cherkavskyi/', target:"_blank"},
+        { id: uuidv4(), src: youtube, alt: 'youtube', cName: 'footer__media-img', href: 'https://www.youtube.com/', target:"_blank"},
+        { id: uuidv4(), src: instagram, alt: 'instagram', cName: 'footer__media-img', href: 'https://www.instagram.com/stanislavcherkavskyi/', target:"_blank"},
+        { id: uuidv4(), src: pinterest , alt: 'pinterest', cName: 'footer__media-img', href: 'https://www.pinterest.com/cherkavskiy/', target:"_blank"},
     ];
   return (
-    <div className="footer">
+    <footer className="footer">
         <div className="footer__section">
             <img 
                 src={frame} 
@@ -70,7 +70,7 @@ function Footer() {
                 <div className="footer__media--block">
                     {SocialMedias.map((media) => {
                         return (
-                            <a key={media.id}>
+                            <a key={media.id} href={media.href} target={media.target}>
                                 <img alt={media.alt} className={media.cName} src={media.src}
                                 />
                             </a>
@@ -82,7 +82,7 @@ function Footer() {
         </div>
         <img className="footer__line" src={gline} alt="line" />
         <p className="footer__copyright">2023 &#169; HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED</p>
-    </div>
+    </footer>
   );
 }
 
