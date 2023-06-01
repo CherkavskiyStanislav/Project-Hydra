@@ -4,7 +4,7 @@ import Header from './header/Header.js';
 import Main from './main/Main.js';
 import Footer from './footer/Footer'
 import { I18nextProvider } from 'react-i18next';
-import i18n from './i18n.js'; 
+import i18n from './translation/i18n.js'; 
 import Registration from './registration/Registration';
 
 
