@@ -205,14 +205,6 @@
         url(./../img/line/bc_line_footer-1.png)20px -230px no-repeat,
         url(./../img/line/bc_line_footer-2.png)20px 50px no-repeat;
 
-        a{
-            text-decoration: none;
-            color: #FFFFFF;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-        }
-
         &__section{
             display: flex;
             justify-content: space-between;
@@ -235,6 +227,38 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
+                a{
+                    position: relative;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    background-image: linear-gradient(
+                        to right,
+                        #C0B7E8,
+                        #C0B7E8 50%,
+                        #fff 50%
+                    );
+                    background-size: 200% 100%;
+                    background-position: -100%;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 0.3s ease-in-out;
+                    &:before {
+                        background: #C0B7E8;
+                        display: block;
+                        position: absolute;
+                        bottom: -3px;
+                        height: 1px;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:hover {
+                        background-position: 0;
+    
+                    }
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
             }
 
             .footer__media{

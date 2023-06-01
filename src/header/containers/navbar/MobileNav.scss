@@ -2,7 +2,7 @@
 
 .navbar__mobile{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     .navbar__mobile-toggle {
         z-index: 999;

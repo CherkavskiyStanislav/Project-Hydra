@@ -2,6 +2,8 @@ import React from "react";
 import './Footer.scss';
 import { v4 as uuidv4 } from "uuid";
 import { useTranslation } from 'react-i18next';
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom'
 
 import frame from '../img/logo/footerLogo.png';
 import facebook from '../img/socials/facebook.svg';
@@ -16,11 +18,11 @@ import vline from '../img/line/vertical-line-footer.png';
 function Footer() {
     const { t } = useTranslation();
     const FooterMenuItems = [
-        { id: uuidv4(), title: t('footer_nav_link1'), url: '/', cName: 'footer__nav--link'},
-        { id: uuidv4(), title: t('footer_nav_link2'), url: '/', cName: 'footer__nav--link'},
-        { id: uuidv4(), title: t('footer_nav_link3'), url: '/', cName: 'footer__nav--link'},
-        { id: uuidv4(), title: t('footer_nav_link4'), url: '/', cName: 'footer__nav--link'},
-        { id: uuidv4(), title: t('footer_nav_link5'), url: '/', cName: 'footer__nav--link'},
+        { id: uuidv4(), title: t('footer_nav_link1'), url: '#about', cName: 'footer__nav--link'},
+        { id: uuidv4(), title: t('footer_nav_link2'), url: '#serv', cName: 'footer__nav--link'},
+        { id: uuidv4(), title: t('footer_nav_link3'), url: '#tech', cName: 'footer__nav--link'},
+        { id: uuidv4(), title: t('footer_nav_link4'), url: '#how', cName: 'footer__nav--link'},
+        { id: uuidv4(), title: t('footer_nav_link5'), url: '#join', cName: 'footer__nav--link'},
       ]
     const FooterBarLists = [
         { id: uuidv4(), title: t('footer_bar_link1'), url: '/', cName: 'footer__bar--link'},
@@ -47,22 +49,22 @@ function Footer() {
             <img className="line" src={vline} alt="line" />
             <div className="footer__nav">
                 {FooterMenuItems.map((items) => {
-                return (
-                    <a key={items.id} href={items.url} className={items.cName}>
-                    {items.title}
-                    </a>
-                );
+                    return (
+                        <HashLink smooth to={items.url} key={items.id} className={items.cName}>
+                            {items.title}
+                        </HashLink>
+                    );
                 })}
             </div>
             <img className="line" src={vline} alt="line" />
             <div className="footer__bar">
                 {FooterBarLists.map((list) => {
                     return (
-                        <a key={list.id} href={list.url} className={list.cName}>
-                        {list.title}
-                        </a>
+                        <Link key={list.id} href={list.url} className={list.cName}>
+                            {list.title}
+                        </Link>
                     );
-                    })}
+                })}
             </div>
             <img className="line" src={vline} alt="line" />
             <div className="footer__media">

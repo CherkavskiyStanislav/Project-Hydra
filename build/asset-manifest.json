@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/project-Hydra/static/css/main.77f2d2f0.css",
-    "main.js": "/project-Hydra/static/js/main.00de7bae.js",
+    "main.css": "/project-Hydra/static/css/main.774eca7c.css",
+    "main.js": "/project-Hydra/static/js/main.efc98771.js",
     "static/media/mainMan.webp": "/project-Hydra/static/media/mainMan.8dd17521fd342a1e9253.webp",
     "static/media/headerGirl.webp": "/project-Hydra/static/media/headerGirl.63759dae0a16d42d404b.webp",
     "static/media/technoGirl.webp": "/project-Hydra/static/media/technoGirl.b629536de7e2ef56918d.webp",
@@ -27,11 +27,11 @@
     "static/media/linkedin.svg": "/project-Hydra/static/media/linkedin.ed4bec28a8eb415f4e3beb52763bf156.svg",
     "static/media/facebook.svg": "/project-Hydra/static/media/facebook.6b5e1d7ac284ebce0a62e053e4fe7c37.svg",
     "index.html": "/project-Hydra/index.html",
-    "main.77f2d2f0.css.map": "/project-Hydra/static/css/main.77f2d2f0.css.map",
-    "main.00de7bae.js.map": "/project-Hydra/static/js/main.00de7bae.js.map"
+    "main.774eca7c.css.map": "/project-Hydra/static/css/main.774eca7c.css.map",
+    "main.efc98771.js.map": "/project-Hydra/static/js/main.efc98771.js.map"
   },
   "entrypoints": [
-    "static/css/main.77f2d2f0.css",
-    "static/js/main.00de7bae.js"
+    "static/css/main.774eca7c.css",
+    "static/js/main.efc98771.js"
   ]
 }
