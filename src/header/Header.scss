@@ -3,22 +3,40 @@
 .header{
     @include respond-to(small) {
         padding: 25px 35px 0px 35px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        // background: 
-        // url(./../img/line/line-bc-user1.png)30% 60% no-repeat,
-        // url(./../img/line/line-bc-user2.png)70% 115% no-repeat,
-        // url(./../img/line/line-bc-user3.png)140% 200% no-repeat,
+        background-image: 
+        url(./../img/line/line-bc-user1.png),
+        url(./../img/line/line-bc-user2.png),
+        url(./../img/line/line-bc-user3.png);
+        background-position: 
+            50% 0%,
+            30% 53%,
+            110% 30%;
+        background-size: 
+            60%,
+            130%,
+            70%;
+        background-repeat: no-repeat;
     }
     
     @include respond-to(medium) {
-    
+        padding: 50px 80px 0px 85px;
+        background-image: 
+        url(./../img/line/line-bc-user1.png),
+        url(./../img/line/line-bc-user2.png),
+        url(./../img/line/line-bc-user3.png);
+        background-position: 
+            50% -35%,
+            30% 53%,
+            100% 40%;
+        background-size: 
+            60%,
+            130%,
+            70%;
+        background-repeat: no-repeat;
     }
     
     @include respond-to(large) {
         padding: 50px 80px 0px 85px;
-
         background: 
         url(./../img/line/line-bc-user1.png)90% 0% no-repeat,
         url(./../img/line/line-bc-user2.png)100% 90% no-repeat,

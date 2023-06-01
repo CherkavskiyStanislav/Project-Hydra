@@ -24,7 +24,6 @@
                     background-clip: text;
                 }
             }
-
             p{
                 display: none;
             }
@@ -51,7 +50,6 @@
                 cursor: pointer;    
             }
         }
-
         &--left{
             order: 1;
             img{
@@ -61,17 +59,67 @@
                 box-shadow: rgba(0, 0, 0, 0.148) 0px 0px 0px 15px;
             }
         }
-
-
     }
 
     @include respond-to(medium) {
+        &--right{
+            order: 2;
+            h2{
+                text-align: center;
+                margin-top: 40px;
+                font-size: 38px;
+                font-weight: 700;
+                span{
+                    font-size: 38px;
+                    background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                margin: 30px 50px;
+            }
+            &--button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 40px;
+                img{
+                    display: none;
+                }
+            }
+            button{
+                padding: 16px 40px;
+                height: 62px;
+                background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+                border-radius: 40px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 17px;
+                color: #343045;
+                position: relative;
+                border: none;
+                cursor: pointer;    
+            }
+        }
+        &--left{
+            order: 1;
+            img{
+                width: 420px;
+                height: 380px;
+                border-radius: 100px 100px 100px 240px;
+                box-shadow: rgba(0, 0, 0, 0.148) 0px 0px 0px 15px;
+            }
+        }
 
     }
 
     @include respond-to(large) {
         flex-direction: row;
-
         &--right{
             max-width: 501px;
             max-height: 420px;
@@ -93,7 +141,7 @@
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 20px;
-                margin-bottom: 66px;
+                margin-bottom: 50px;
             }
     
             &--button{

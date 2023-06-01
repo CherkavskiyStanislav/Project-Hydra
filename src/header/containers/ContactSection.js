@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
-import Slide from './HeaderSlide'; 
+import Slide from './headerSlide/HeaderSlide';
 
 import phone from "../../img/icons/headerTell.png";
 import location from "../../img/icons/headerLoc.png";

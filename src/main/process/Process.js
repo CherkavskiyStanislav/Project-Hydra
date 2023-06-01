@@ -34,7 +34,3 @@ function Process() {
 }
 
 export default Process;
-
-    {/* <div className="main__process" >
-        {elipseCard}
-    </div> */}

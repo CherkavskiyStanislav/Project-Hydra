@@ -40,7 +40,3 @@ function Build() {
 }
 
 export default Build;
-
-{/* <div className="main__list" id="serv">
-{serviceCard}
-</div> */}

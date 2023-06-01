@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './MobileNav.scss'
 import { useTranslation } from 'react-i18next';
+import { HashLink } from 'react-router-hash-link';
 
 
 const MobileNav = () => {
@@ -29,23 +30,27 @@ const MobileNav = () => {
       <div className={`navbar__mobile-menu ${!isNavOpen ? '' : 'open'}`}>
         <ul className='navbar__mobile-list'>
           <li className='navbar__mobile-item'>
-            <a href='/'>{t('navbar-menu-about')}</a>
+            <HashLink to="#about" onClick={closeNav}>{t('navbar-menu-about')}</HashLink>
           </li>
           <li className='navbar__mobile-item'>
-            <a href='/'>{t('navbar-menu-services')}</a>
+            <HashLink to="#serv" onClick={closeNav}>{t('navbar-menu-services')}</HashLink>
           </li>
           <li className='navbar__mobile-item'>
-            <a href='/'>{t('navbar-menu-tech')}</a>
+            <HashLink to="#tech" onClick={closeNav}>{t('navbar-menu-tech')}</HashLink>
           </li>
           <li className='navbar__mobile-item'>
-            <a href='/'>{t('navbar-menu-how')}</a>
+            <HashLink to="#how" onClick={closeNav}>{t('navbar-menu-how')}</HashLink>
           </li>
           <div className='navbar__mobile_container'>
             <button className='navbar__mobile-button'>
-              <a href='/' className='navbar__mobile-contact'>{t('navbar-buttons-contact')}</a>
+              <HashLink to="#contact" onClick={closeNav}>
+                {t('navbar-buttons-contact')}
+              </HashLink>
             </button>
             <button className='navbar__mobile-button'>
-              <a href='/' className='navbar__mobile-join'>{t('navbar-buttons-join')}</a>
+              <HashLink to="#join" onClick={closeNav}>
+                {t('navbar-buttons-join')}
+              </HashLink>
             </button>
           </div>
         </ul>

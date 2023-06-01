@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './HeaderSlide.scss'
-import slideLine from './../../img/line/vertical-line.png';
+import slideLine from './../../../img/line/vertical-line.png';
 
 
 SwiperCore.use([ Navigation ])

@@ -1,7 +1,7 @@
 import React from "react";
 import { ContactSection } from './ContactSection';
 import { useTranslation } from 'react-i18next';
-import './HomeContainers.scss';
+import './MainSection.scss';
 import girl from '../../img/main/headerGirl.webp';
 
 function MainSection (){

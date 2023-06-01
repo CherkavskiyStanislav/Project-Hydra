@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Registration.scss';
-import './FormInputs.scss';
+import './components/FormInputs.scss';
 import { FormInput } from './components/FormInputs';
 import { validateInput } from './components/InputValidation';
 import { useTranslation } from 'react-i18next';
@@ -63,7 +63,7 @@ const Registration = () => {
 
 
   return (
-    <div className="form">
+    <div className="form" id="join">
       <form onSubmit={handleSubmit} className="form__container">
         <div className="form__title">
           <h2>{t('form__title-h2')}</h2>

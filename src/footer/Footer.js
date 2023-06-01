@@ -37,7 +37,7 @@ function Footer() {
         { id: uuidv4(), src: pinterest , alt: 'pinterest', cName: 'footer__media-img', href: 'https://www.pinterest.com/cherkavskiy/', target:"_blank"},
     ];
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
         <div className="footer__section">
             <img 
                 src={frame} 

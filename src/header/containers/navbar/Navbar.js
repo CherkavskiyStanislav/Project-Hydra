@@ -1,11 +1,11 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import './Navbar.scss'
 import MobileNav from "./MobileNav";
 import { useTranslation } from 'react-i18next';
 import { HashLink } from 'react-router-hash-link';
 
-import frame from '../../img/logo/barLogo.png';
-import logo from '../../img/logo/barLogoName.png';
+import frame from './../../../img/logo/barLogo.png';
+import logo from './../../../img/logo/barLogoName.png';
 
 function Navbar (){
   const { t, i18n } = useTranslation();

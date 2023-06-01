@@ -1,4 +1,4 @@
-@import './../mixins.scss';
+@import './../../mixins.scss';
 
 .form__field{
     display: flex;
@@ -56,7 +56,12 @@
     }
 
     @include respond-to(medium) {
-
+        height: 60px;
+        .divError {
+            top: 120%;
+            left: 10%;
+            transform: translate(0%, -50%);
+        }
     }
 
     @include respond-to(large) {
